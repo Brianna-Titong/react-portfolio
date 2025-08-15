@@ -1,0 +1,213 @@
+body {
+  background-image: url('./images/6604090.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* About Me Section */
+.about-section {
+    padding: 0;
+    background: rgba(32, 32, 32, 0.95);
+    margin: 0;
+    width: 100%;
+}
+
+.about-card {
+    background: rgba(32, 32, 32, 0.95);
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+}
+
+.about-image-container {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 350px; 
+  height: 350px; 
+  margin: 0 auto;
+}
+
+.about-image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-image-placeholder img {
+    max-width: 500%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.about-text-content {
+    padding: 60px 40px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text-content h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-text-content p {
+    color: #f8f9fa;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .about-image-container {
+        height: 250px;
+    }
+    
+    .about-text-content {
+        height: auto;
+        padding: 40px 20px;
+    }
+    
+    .about-text-content h2 {
+        font-size: 2rem;
+    }
+}
+
+.about-highlight {
+    color: #ffd700;
+    font-weight: 600;
+}
+
+.portfolio-section-container {
+    padding: 60px 0;
+    transition: background-color 0.5s ease-in-out;
+    color: #fff;
+    border-radius: 15px; 
+}
+
+.card.project-card {
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: rgba(32, 32, 32, 0.9);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card .card-body {
+    padding: 20px;
+}
+
+.project-card h5 {
+    cursor: pointer;
+    color: #fff;
+}
+
+.project-card p {
+    color: #fff;
+}
+
+.contact-form h2 {
+    color: #fff;
+}
+
+.contact-form label {
+    color: #fff;
+}
+
+.contact-form {
+    padding: 60px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(32, 32, 32, 0.9);
+}
+
+.project-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #8c8c8c;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1050; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 600px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.modal-body img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
