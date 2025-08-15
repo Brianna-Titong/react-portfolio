@@ -3,15 +3,13 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
-// Import your images here
 import pfp from './images/eggy-pfp.png';
 import project1 from './images/Screenshot 2025-08-07 163116.png';
-import project2 from './images/cooking-video.png'; // Make sure to import all your images
+import project2 from './images/cooking-video.png'; 
 import project3 from './images/christmasvid.png';
 
 const App = () => {
   useEffect(() => {
-    // This is where you'll put your JavaScript logic
     const portfolioSection = document.querySelector('.portfolio-section-container');
     const projectTitles = document.querySelectorAll('.project-card h5');
     let imageIndex = 0;
@@ -59,11 +57,11 @@ const App = () => {
       });
     });
 
-    // The cleanup function
+   
     return () => {
-        // Remove event listeners if needed
+        
     };
-  }, []); // Empty dependency array means this runs once on mount
+  }, []); 
 
   return (
     <div>
